@@ -14,7 +14,6 @@ if (pets !== 'YES' && pets !== 'NO' && pets !== 'Y' && pets !== 'N'){
   ++correctAnswers;
 }
 console.log('Pets Guess: ', pets);
-console.log('Correct Answers: ', correctAnswers);
 
 var petType = prompt('Does David have a cat?');
 petType = petType.toUpperCase();
@@ -71,5 +70,7 @@ if (work === 'YES' || work === 'Y'){
   ++correctAnswers;
 }
 console.log('David working now: ', work);
+
+console.log('Correct Answers: ', correctAnswers);
 
 alert('In the end, you got ' + correctAnswers + ' out of 5 correct. But how were you supposed to know any of this?');
