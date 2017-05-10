@@ -1,1 +1,4 @@
 I feel like the coding concepts and syntax are relatively straight forward (I know it's only the second day).  The trouble I've had most is that I use a Windows system and if some command doesn't work with Windows but does work for MacOsX, then us Windows folks are mostly out of luck. This has led to some troubles with Git and Git Bash that makes it so I can't follow along in class until I fix the problem during a break. Other than that it all seems to be going well!
+
+Update
+I wasn't content with the code I uploaded before leaving lab today so I revisited it all once I got home.  I cleaned up the javascript significantly and I'm happy with where that ended up. I made a few changes to the CSS and HTML but I'm pretty sure I like coding more than design.  That said there were a few things I couldn't figure out in HTML (like why the two images aren't inline next eachother), so I may just need to get a better bearing on design to enjoy it more.
