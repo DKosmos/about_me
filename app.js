@@ -2,6 +2,7 @@
 
 var correctAnswers = 0;
 
+var petsArray = [];
 do{
   var pets = prompt('Does David have any pets?');
   pets = pets.toUpperCase();
@@ -13,10 +14,13 @@ do{
     alert('Actually, he does have a pet.');
   } else {
     alert('That\'s not a yes or no answer! Try again.');
+    petsArray.push(pets);
   }
 } while (pets !== 'YES' && pets !== 'Y' && pets !== 'NO' && pets !== 'N');
 console.log('Pets Guess: ', pets);
+console.log('Not Y/N: ', petsArray);
 
+var petTypeArray = [];
 do{
   var petType = prompt('Does David have a cat?');
   petType = petType.toUpperCase();
@@ -28,9 +32,11 @@ do{
     ++correctAnswers;
   } else {
     alert('Just answer yes or no, you\'re better than this.');
+    petTypeArray.push(petType);
   }
 } while(petType !== 'YES' && petType !== 'Y' && petType !== 'NO' && petType !== 'N');
 console.log('David has cat: ', petType);
+console.log('Not Y/N: ', petTypeArray);
 
 switch (correctAnswers) {
   case 1:
@@ -43,6 +49,7 @@ switch (correctAnswers) {
     alert('You haven\'t gotten any correct yet, but you aren\'t even half way done.');
 }
 
+var homeArray = [];
 do{
   var home = prompt('Does David walk to class each day?');
   home = home.toUpperCase();
@@ -54,10 +61,13 @@ do{
     alert('Actually he does walk to class, but he only lives two blocks away.');
   } else {
     alert('By now you should know these are yes/no questions. Let\'s try this again.');
+    homeArray.push(home);
   }
 } while(home !== 'YES' && home !== 'Y' && home !== 'NO' && home !== 'N');
 console.log('Walks to class: ', home);
+console.log('Not Y/N: ', homeArray);
 
+var lunchArray = [];
 do{
   var lunch = prompt('Does David walk his dog during his lunch hour?');
   lunch = lunch.toUpperCase();
@@ -69,10 +79,13 @@ do{
     alert('He actually walks his dog most days during the lunch hour. Occasionally his dog goes to daycare for the whole day.');
   } else {
     alert('Just yes or no please.')
+    lunchArray.push(lunch);
   }
 } while (lunch !== 'YES' && lunch !== 'Y' && lunch !== 'NO' && lunch !== 'YES');
 console.log('Walks dog at lunch: ', lunch);
+console.log('Not Y/N: ', lunchArray);
 
+var workArray = [];
 do{
   var work = prompt('Is David still working while he takes Code 201?');
   work = work.toUpperCase();
@@ -84,9 +97,11 @@ do{
     ++correctAnswers;
   } else {
     alert('This is the fifth question, you should have it figured out by now.');
+    workArray.push(work);
   }
 } while (work !== 'YES' && work !== 'Y' && work !== 'NO' && work !== 'N');
-console.log('David working now: ', work);
+console.log('Not Y/N: ', work);
+console.log('David working now: ', workArray);
 
 console.log('Correct Answers: ', correctAnswers);
 
